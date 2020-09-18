@@ -44,6 +44,9 @@ table {
 	border-spacing: 0;
 }
 
+body {
+  height: 100hv;
+}
 /* The base of every button */
 .btn {
   display: inline-block;
@@ -61,7 +64,7 @@ table {
   color: white;
 }
 
-/* Additional styles for "Default" */
+/* Additional styles for buttons */
 .btn-default {
   color: #333;
   background-color: #fff;
@@ -123,12 +126,69 @@ table {
   line-height: 1.42857143;
   padding: 6px 12px;
   margin-bottom: 10px;
-  border: 1px solid blue;
+  border: 1px solid black;
   white-space: nowrap;
   vertical-align: middle;
   color: black;
-  bottom: 10px;
+  position: relative;
+}
+.flat-btn:hover {
+  background-color: black;
+  color: white;
+  transition: background-color .5s ease-in-out;
 }
 
 
+/* ==== GENERAL STYLES FOR NAVIGATION==== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==== A SIMPLE TOP NAVIGATION ==== */
+
+nav {
+  font-size: 0;
+  position: relative;
+  top: 20px
+}
+
+nav ul {
+  background-color: #eee;
+  text-align: center;
+}
+
+nav li {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  text-decoration: none;
+  color: #C74F78;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+
+nav a.active {
+  background-color: #c74f78;
+  color: #eee;
+}
+
+@media (min-width: 600px) {
+
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }
+
+}
 
