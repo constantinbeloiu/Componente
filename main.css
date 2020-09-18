@@ -112,9 +112,23 @@ table {
   border-color: #ac2925;
   }
 
+/* Flat button styles */
 
-
-
+.flat-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  border: 1px solid blue;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: black;
+  bottom: 10px;
+}
 
 
 
